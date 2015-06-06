@@ -14,7 +14,7 @@ To view the value of a variable on-screen debugging, you need to write code:
 To make the display on the screen, you need to write code:
 
 	Debug::out($local = true);
-	
+
 
 Intallation in Yii
 ------------
@@ -26,7 +26,7 @@ This class we will establish the framework Yii, but it can be used anywhere. To 
 	),
 
 Next, you need to make a call to debug output.
-This can be implemented such in controller:
+This can be implemented such in your controller, overriding the render method:
 
 	public function render($view, $data=NULL, $return=false)
 	{
