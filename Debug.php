@@ -11,8 +11,7 @@ class Debug {
 		$trace = debug_backtrace();  
 	    $vLine = file($trace[0]['file']);  
 	    $fLine = $vLine[ $trace[0]['line'] - 1 ];  
-	    preg_match( "#(\\$[a-zA-Z_\-\>]+)#", $fLine, $match );  
-
+	    preg_match( "#\((\\$?[a-zA-Z_\-\>\:\(\)\[\]\']+)\);#", $fLine, $match );
 		self::$result[$match[1]] = $var;
 	}
 
