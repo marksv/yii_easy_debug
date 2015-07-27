@@ -1,4 +1,10 @@
 <?php
+/**
+ *## Yii easy debug class
+ *
+ * @author Kashin Oleg <dev@marksv.com>
+ * @version 1.0.0
+ */
 
 define("MS_DEBUG", true);
 
